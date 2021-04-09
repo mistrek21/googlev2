@@ -33,6 +33,7 @@ function Header() {
             ref={searchInputRef}
             type="text"
             className="flex-grow w-full focus:outline-none"
+            defaultValue={router.query.term}
           />
           <XIcon
             onClick={() => (searchInputRef.current.value = "")}
@@ -44,7 +45,7 @@ function Header() {
             Search
           </button>
         </form>
-        <Avatar url="https://coaching.papareact.com/ai9" className="ml-auto"/> 
+        <Avatar url="https://avatars.githubusercontent.com/u/53528392?v=4" className="ml-auto"/> 
       </div>
 
       {/* header options */}
